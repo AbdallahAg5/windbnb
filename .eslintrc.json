@@ -1,3 +1,13 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": ["next", "next/core-web-vitals", "eslint:recommended"],
+  "globals": {
+    "React": "readonly"
+  },
+  "rules": {
+    "no-duplicate-imports": "error",
+    "eqeqeq": ["error", "always"],
+    "arrow-spacing": ["error", { "before": true, "after": true }],
+    "no-console": ["error", { "allow": ["warn", "error", "info"] }],
+    "no-undef": "off"
+  }
 }

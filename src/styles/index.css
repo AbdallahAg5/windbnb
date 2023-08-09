@@ -1,0 +1,302 @@
+:root{
+    --black: rgba(0, 0, 0, 0.10);
+    --white: #fff;
+    --gray95 : #F2F2F2;
+    --gray31 : #4f4f4f;
+    --silver : #BDBDBD;
+    --darkCharcoal : #333;
+    --flamingo : #EB5757;
+}
+
+
+
+
+*{
+    /* border: 1px solid red;  */
+}
+
+
+.main__container{
+    padding: 10px 13px;
+    width: 100%;
+    margin: 0;
+}
+
+nav{
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    background-color: transparent;
+}
+
+
+.nav__header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+
+
+.xmark{
+    width: 21px;
+    height: 25px;
+}
+
+
+
+
+
+
+.nav__logo{
+    height: 30px;
+    flex-shrink: 0;
+}
+
+.search__form{
+    width: 297px;
+    height: 55px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: var(--white);
+    box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.10);
+    margin: 39px auto auto auto;
+    overflow: hidden;
+    display: flex;
+}
+
+
+
+.search__location__input{
+    border-right: 1px solid var(--gray95);
+    width: 138px;
+    height: 55px;
+    padding: 19px ;
+}
+
+.search__member__input{
+    border-right: 1px solid var(--gray95);
+    width: 106px;
+    height: 55px;
+    padding: 19px ;
+}
+
+
+
+.search__location__input,.search__member__input{
+    color: var(--darkCharcoal);
+    font-family: Muli;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.search__location__input::placeholder{
+    color: var(--silver);
+    font-family: Muli;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.search__member__input::placeholder{
+    color: var(--silver);
+    font-family: Muli;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.search__button{
+     width: 53px;
+     height: 55px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+
+.search__icon{
+    width: 17.048px;
+    height: 17.058px;
+    flex-shrink: 0;
+}
+
+
+
+.search__result{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 37px;
+    margin-bottom: 24px;
+}
+
+
+.searched__location{
+    color: var(--darkCharcoal);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+.number__places{
+    color: var(--gray31);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+.card__container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    margin: auto;
+}
+
+.card{
+    margin: auto;
+    width: 350px;
+}
+
+.card__img {
+    border-radius: 8px;
+    height: 238.35px;
+    object-fit: cover;
+}
+
+.card__description{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.card__host__type{
+    color: var(--gray31);
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    padding: 7px 0px ;
+    width: 100px;
+    border-radius: 12px;
+    border: 1px solid var(--gray31);
+    text-align: center;
+}
+
+
+.airbnb__type{
+    color: var(--gray-3, #828282);
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 9px;
+    margin-right: 38px;
+}
+
+
+.raiting__container{
+    display:flex ;
+    justify-content: space-between;
+    align-items: center;
+    width: 43px;
+}
+
+
+.raiting__star{
+    width: 21px;
+    height: 21px;
+    margin-right: 10px;
+    background-color: var(--flamingo);
+    color: var(--flamingo);
+}
+
+.card__raiting{
+    color: var(--gray31);
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+.card__title{
+    color: var(--darkCharcoal);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 11px;
+    margin-bottom: 35px;
+}
+
+
+
+@media (min-width:500px) {
+    
+.card{
+    margin: auto;
+    width: 300px;
+}
+
+.card__container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    margin: auto;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    background-color: transparent;
+}
+
+
+.search__form{
+    width: 297px;
+    height: 55px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: var(--white);
+    box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.10);
+    margin: 0px 0px 0px 0px;
+    overflow: hidden;
+    display: flex;
+}
+
+
+.bars{
+    display: none;
+}
+
+}
+
+
+
+
