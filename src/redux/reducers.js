@@ -2,7 +2,7 @@ import data from '@/data/data.json';
 
 export const SearchAirbnb = (state, { payload }) => {
   let arr = [];
-  let { location, guest } = payload;
+  let { location } = payload;
   for (let i = 0; i < data.length; i++) {
     if (location === '') {
       state.locationFound = [];
@@ -19,7 +19,7 @@ export const SearchAirbnb = (state, { payload }) => {
 
 export const DataSearched = (state, { payload }) => {
   let arr = [];
-  let { location, guest } = payload;
+  let { location } = payload;
   for (let i = 0; i < data.length; i++) {
     if (data[i].city.toLowerCase().includes(location.toLowerCase())) {
       arr.push(data[i]);
