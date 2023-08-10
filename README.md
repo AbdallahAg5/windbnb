@@ -6,6 +6,10 @@
 
 <div align="center">
   <h3>
+    <a href="https://windbnbdev-challenge.netlify.app">
+      Demo
+    </a>
+    <span>|</span>
     <a href="https://devchallenges.io/challenges/3JFYedSOZqAxYuOCNmYD">
       Challenge
     </a>

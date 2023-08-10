@@ -107,7 +107,7 @@ function Nav() {
           }`}
         />
         <div className="result__container">
-          {locationFound.map((e, i) => (
+          {locationFound.slice(0, 4).map((e, i) => (
             <span
               key={i}
               className={`${
