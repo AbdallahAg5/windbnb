@@ -482,7 +482,7 @@ nav {
 .blur {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.609);
-  backdrop-filter: blur(7px);
+  backdrop-filter: blur(3px);
   bottom: 0;
   position: absolute;
   height: 40vh;
